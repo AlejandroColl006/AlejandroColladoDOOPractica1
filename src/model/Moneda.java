@@ -66,9 +66,8 @@ public Moneda (String pais, String autoridadGobernante, int annus, double valor,
 
     @Override
     public String toString() {
-        return "Moneda [" + super.toString()
-                + ", composicion=" + composicion
-                + ", peso=" + peso + " g"
+        return "La Moneda tiene características [composicion=" + composicion
+                + ", peso =" + peso + " g"
                 + ", diametro=" + diametro + " mm"
                 + ", grosor=" + grosor + " mm"
                 + ", estadoConservacion=" + estadoConservacion + "]";

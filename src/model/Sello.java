@@ -54,8 +54,7 @@ public class Sello extends ElementoColeccionable {
 
     @Override
     public String toString() {
-        return "Sello [" + super.toString()
-                + ", altura=" + altura + " mm"
+        return "El Sello tiene las caracterísitcas [altura=" + altura + " mm"
                 + ", anchura=" + anchura + " mm"
                 + ", imagen=" + imagen
                 + ", estadoConservacion=" + estadoConservacion + "]";
