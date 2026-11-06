@@ -13,7 +13,7 @@ public enum EstadoConservacionSello {
         this.descripcion = descripcion;
     }
 
-    public String getDescripcion() {
+    public String getDescripcionSello() {
         return descripcion;
     }
 }

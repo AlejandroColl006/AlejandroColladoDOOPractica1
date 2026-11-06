@@ -17,7 +17,7 @@ public enum EstadoConservacionMoneda {
         this.descripcion = descripcion;
     }
 
-    public String getDescripcion() {
+    public String getDescripcionMoneda() {
         return descripcion;
     }
 }
