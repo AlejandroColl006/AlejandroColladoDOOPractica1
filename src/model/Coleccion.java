@@ -12,14 +12,14 @@ public class Coleccion {
         this.elementos = new ArrayList<ElementoColeccionable>();
     }
 
-    public void añadirMoneda (Moneda moneda) {
+    public void anadirMoneda (Moneda moneda) {
         if (moneda == null) {
             throw new IllegalArgumentException("No se puede añadir una moneda vacía ");
         }
         elementos.add(moneda);
     }
 
-    public void añadirSello (Sello sello) {
+    public void anadirSello (Sello sello) {
         if (sello == null) {
             throw new IllegalArgumentException("No se puede añadir un sello vacío");
         }
@@ -27,7 +27,7 @@ public class Coleccion {
     }
 
     public List<Moneda> getMonedas() {
-        List<Moneda> monedas = new ArrayList<>();
+        List<Moneda> monedas = new ArrayList<Moneda>();
         for (ElementoColeccionable elemento : elementos) {
             if (elemento instanceof Moneda) {
                 monedas.add((Moneda) elemento);}
@@ -36,7 +36,7 @@ public class Coleccion {
     }
 
     public List<Sello> getSellos() {
-        List<Sello> sellos = new ArrayList<>();
+        List<Sello> sellos = new ArrayList<Sello>();
         for (ElementoColeccionable elemento : elementos) {
             if (elemento instanceof Sello) {
                 sellos.add((Sello) elemento);}
@@ -88,6 +88,8 @@ public class Coleccion {
         }
         return suma/elementos.size();
     }
+
+
 }
 
 
